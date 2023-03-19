@@ -1,0 +1,20 @@
+#main
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.imgDiv > img
+{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.imgDiv
+{
+    padding: 10px;
+    max-width: 300px;
+}
