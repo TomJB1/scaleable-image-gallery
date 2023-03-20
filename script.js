@@ -1,4 +1,5 @@
-numberofImages = 7
+numberofImages = 8
+
 
 
 function AddImage(src) {
@@ -22,4 +23,4 @@ for (let i = 1; i < numberofImages; i++) {
     console.log(i)
     console.log(src)
     AddImage(src);
-  }
+}
