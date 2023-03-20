@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .imgDiv > img
@@ -16,5 +16,27 @@
 .imgDiv
 {
     padding: 10px;
-    max-width: 300px;
+    height: 30;
+    width: 20%;
+    background-color: gray;
+    margin: 10px;
+}
+
+#loader
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.imgDiv#loaderCard
+{
+    text-align: center;
+    padding: 10px;
+    height: 30vh;
+    width: 20%;
+    background-color: gray;
+    margin: 10px;
+
 }
