@@ -1,4 +1,4 @@
-numberofImages = 20
+numberofImages = 31
 
 const main = document.getElementById("main");
 
@@ -11,9 +11,15 @@ let currentPage = 1;
 const pageCount = Math.ceil(numberofImages / imgIncrease);
 
 const InfiniteScroll = () => {
-    const endOfPage = window.innerHeight + window.pageYOffset + 1000 >= document.body.offsetHeight;
-    if (endOfPage) {
-      LoadPage(currentPage + 1);
+    const endOfPage = window.innerHeight + window.pageYOffset + 30 >= document.body.offsetHeight;
+    if (endOfPage) 
+    {
+        if(currentPage < pageCount)
+        {
+            LoadPage(currentPage + 1);
+
+        }
+      
     }
 };
 
@@ -56,5 +62,30 @@ function LoadPage(page)
 window.onload = function () {
     LoadPage(currentPage);
     LoadPage(currentPage+1)
-    LoadPage(currentPage+2)
-  };
+};
+
+
+
+
+/*
+// disable dev tools
+document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+function ctrlShiftKey(e, keyCode) {
+  return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+}
+
+
+document.onkeydown = (e) => {
+  // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+  if (
+    event.keyCode === 123 ||
+    ctrlShiftKey(e, 'I') ||
+    ctrlShiftKey(e, 'J') ||
+    ctrlShiftKey(e, 'C') ||
+    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+  )
+    return false;
+};
+
+*/

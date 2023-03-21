@@ -1,6 +1,28 @@
+@keyframes shine {
+    to {
+      background-position-x: -200%;
+    }
+  }
+
 img 
 {
     pointer-events: none;
+}
+
+#body
+{
+    background-color: lightblue;
+}
+
+#header
+{
+    text-align: center;
+}
+
+#header > h1
+{
+    font-family: roboto, sans-serif;
+    color: rgb(42, 42, 114);
 }
 
 #main
@@ -9,6 +31,7 @@ img
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    background-color: lightblue;
 }
 
 .imgDiv > img
@@ -23,8 +46,9 @@ img
     padding: 10px;
     height: 30;
     width: 20%;
-    background-color: gray;
+    background-color: #1a1150;
     margin: 10px;
+    border-radius: 10px;
 }
 
 #loader
@@ -41,7 +65,10 @@ img
     padding: 10px;
     height: 30vh;
     width: 20%;
-    background-color: gray;
+    background-color: rgb(213, 216, 55);
     margin: 10px;
+    background: linear-gradient(110deg, #ffee02 8%, #fff780 18%, #ffee02 33%);
+    animation: 1.5s shine linear infinite;
+    background-size: 200% 100%;
 
 }
