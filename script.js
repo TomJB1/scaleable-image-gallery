@@ -11,7 +11,7 @@ let currentPage = 1;
 const pageCount = Math.ceil(numberofImages / imgIncrease);
 
 const InfiniteScroll = () => {
-    const endOfPage = window.innerHeight + window.pageYOffset >= document.body.offsetHeight;
+    const endOfPage = window.innerHeight + window.pageYOffset + 1000 >= document.body.offsetHeight;
     if (endOfPage) {
       LoadPage(currentPage + 1);
     }
