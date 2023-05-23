@@ -70,5 +70,11 @@ img
     background: linear-gradient(110deg, #ffee02 8%, #fff780 18%, #ffee02 33%);
     animation: 1.5s shine linear infinite;
     background-size: 200% 100%;
-
+    font-family: roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bolder;
+    color: #a79d18;
 }

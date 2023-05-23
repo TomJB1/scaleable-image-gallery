@@ -4,7 +4,23 @@ const main = document.getElementById("main");
 
 const loader = document.getElementById("loader");
 
-const imgIncrease = 4;
+const screenWidth = screen.width;
+const screenHeight = screen.height;
+const screenRatio = (screenWidth / screenHeight)*100;
+
+var imgIncrease = 4;
+
+if(screenRatio < 100)
+{
+    imgIncrease = 3;
+}
+
+if(screenRatio < 50)
+{
+    imgIncrease = 2;
+}
+
+
 
 let currentPage = 1;
 
@@ -28,17 +44,19 @@ window.addEventListener("scroll", InfiniteScroll);
 function AddImage(src) {
     var img = new Image();
     img.src = src;
+    img.id = src;
     divName = "Div-" + src;
-    MakeDiv(divName);
+    MakeDiv(divName, "imgDiv", "main", "");
     document.getElementById(divName).appendChild(img);
 }
 
-function MakeDiv(id)
+function MakeDiv(id, classname, location, text)
 {
     const div = document.createElement("div");
     div.id = id;
-    div.className = "imgDiv"
-    document.getElementById('main').appendChild(div);
+    div.className = classname;
+    div.innerText = text;
+    document.getElementById(location).appendChild(div);
 }
 
 function LoadPage(page)
@@ -59,9 +77,17 @@ function LoadPage(page)
 
 
 
-window.onload = function () {
+window.onload = function () 
+{
+    
     LoadPage(currentPage);
-    LoadPage(currentPage+1)
+    LoadPage(currentPage+1);
+    if(screenHeight)
+    //LoadPage(currentPage + 2)
+    for (let i = 0; i < (imgIncrease - 1); i++)
+    {
+        MakeDiv("loaderCard", "imgDiv", "loader", "Loading")
+    }
 };
 
 
