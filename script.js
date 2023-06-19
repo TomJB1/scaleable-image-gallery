@@ -1,4 +1,4 @@
-numberofImages = 31
+numberofImages = 63;
 
 const main = document.getElementById("main");
 
@@ -10,15 +10,19 @@ const screenRatio = (screenWidth / screenHeight)*100;
 
 var imgIncrease = 4;
 
-if(screenRatio < 100)
+let finished = false;
+
+if(screenWidth < 314)
 {
-    imgIncrease = 3;
+    imgIncrease = imgIncrease;
 }
 
-if(screenRatio < 50)
+if(screenWidth < 811)
 {
-    imgIncrease = 2;
+    imgIncrease = imgIncrease;
 }
+
+//currently does nothing FIX
 
 
 
@@ -26,14 +30,25 @@ let currentPage = 1;
 
 const pageCount = Math.ceil(numberofImages / imgIncrease);
 
+let endOfPage = false;
+
 const InfiniteScroll = () => {
-    const endOfPage = window.innerHeight + window.pageYOffset + 30 >= document.body.offsetHeight;
-    if (endOfPage) 
+    endOfPage = window.innerHeight + window.scrollY > document.body.offsetHeight;
+    console.log("end of page: "+endOfPage)
+    if (endOfPage && finished == false) 
     {
         if(currentPage < pageCount)
         {
             LoadPage(currentPage + 1);
+            InfiniteScroll();
+        }
 
+        if(currentPage == pageCount)
+        {
+            document.getElementById("loader").remove();
+            window.removeEventListener("scroll", InfiniteScroll);
+            console.log("removed event listner")
+            finished = true;
         }
       
     }
@@ -88,6 +103,7 @@ window.onload = function ()
     {
         MakeDiv("loaderCard", "imgDiv", "loader", "Loading")
     }
+    InfiniteScroll()
 };
 
 
