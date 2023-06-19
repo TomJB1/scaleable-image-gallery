@@ -11,7 +11,7 @@ img
 
 #body
 {
-    background-color: lightblue;
+    background-color: rgb(7, 9, 33);
 }
 
 #header
@@ -22,7 +22,7 @@ img
 #header > h1
 {
     font-family: roboto, sans-serif;
-    color: rgb(42, 42, 114);
+    color: rgb(49, 49, 145);
 }
 
 #main
@@ -31,7 +31,7 @@ img
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    background-color: lightblue;
+    background-color: rgba(173, 216, 230, 0);
 }
 
 .imgDiv > img
@@ -44,8 +44,8 @@ img
 .imgDiv
 {
     padding: 10px;
-    height: 30;
     width: 20%;
+    min-width: 200px;
     background-color: #1a1150;
     margin: 10px;
     border-radius: 10px;
@@ -62,9 +62,7 @@ img
 .imgDiv#loaderCard
 {
     text-align: center;
-    padding: 10px;
     height: 30vh;
-    width: 20%;
     background-color: rgb(213, 216, 55);
     margin: 10px;
     background: linear-gradient(110deg, #ffee02 8%, #fff780 18%, #ffee02 33%);
