@@ -8,8 +8,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="script.js" defer></script>
 </head>
-<body>
-
+<body id="body">
     <?php
     if('secret' == $_POST["password"]): ?>
         <div id="header">
