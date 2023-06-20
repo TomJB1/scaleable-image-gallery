@@ -8,18 +8,18 @@ const screenWidth = screen.width;
 const screenHeight = screen.height;
 const screenRatio = (screenWidth / screenHeight)*100;
 
-var imgIncrease = 4;
+var columns = 4;
 
 let finished = false;
 
 if(screenWidth < 314)
 {
-    imgIncrease = imgIncrease;
+    columns = columns;
 }
 
 if(screenWidth < 811)
 {
-    imgIncrease = imgIncrease;
+    columns = columns;
 }
 
 //currently does nothing FIX
@@ -28,7 +28,6 @@ if(screenWidth < 811)
 
 let currentPage = 1;
 
-const pageCount = Math.ceil(numberofImages / imgIncrease);
 
 let endOfPage = false;
 
@@ -37,35 +36,24 @@ const InfiniteScroll = () => {
     console.log("end of page: "+endOfPage)
     if (endOfPage && finished == false) 
     {
-        if(currentPage < pageCount)
-        {
-            LoadPage(currentPage + 1);
-            InfiniteScroll();
-        }
-
-        if(currentPage == pageCount)
-        {
-            document.getElementById("loader").remove();
-            window.removeEventListener("scroll", InfiniteScroll);
-            console.log("removed event listner")
-            finished = true;
-        }
+       
       
     }
 };
 
 window.addEventListener("scroll", InfiniteScroll);
 
-function AddImage(src) {
+function AddImage(src, column) {
     var img = new Image();
-    img.src = src;
+    img.setAttribute("data-src", src);
     img.id = src;
+    img.loading = "lazy";
     divName = "Div-" + src;
-    MakeDiv(divName, "imgDiv", "main", "");
+    MakeDiv(divName, "imgDiv", column, "");
     document.getElementById(divName).appendChild(img);
 }
 
-function MakeDiv(id, classname, location, text)
+function MakeDiv(id, classname, location, text="")
 {
     const div = document.createElement("div");
     div.id = id;
@@ -78,14 +66,17 @@ function LoadPage(page)
 {
     currentPage = page;
 
-    const startRange = (page - 1) * imgIncrease;
-    const endRange = page * imgIncrease;
+    const startRange = (page - 1) * columns;
+    const endRange = page * columns;
 
     for (let i = startRange; i < endRange; i++) {
-    src = "images/" + i + ".jpg"
-    console.log(i)
-    console.log(src)
-    AddImage(src);
+        
+        console.log(i)
+        console.log(src)
+        console.log("column:"+column)
+        
+        console.log("row:"+row)
+        AddImage(src, column);
     }
 }
 
@@ -94,17 +85,24 @@ function LoadPage(page)
 
 window.onload = function () 
 {
-    
-    LoadPage(currentPage);
-    LoadPage(currentPage+1);
     if(screenHeight)
     //LoadPage(currentPage + 2)
-    for (let i = 0; i < (imgIncrease - 1); i++)
-    {
-        MakeDiv("loaderCard", "imgDiv", "loader", "Loading")
-    }
+    
     InfiniteScroll()
 };
+
+for (let i = 1; i < (columns+1); i++)
+{
+    MakeDiv(i, "column", "main")
+}
+
+for (let index = 0; index < numberofImages; index++) {
+    src = "images/" + index + ".jpg";
+    row = Math.ceil((index+1)/columns);
+    column = ((index+1)-((columns*row)))+columns
+    AddImage(src, column)
+    
+}
 
 
 
