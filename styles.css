@@ -28,10 +28,6 @@ img
 #main
 {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgba(173, 216, 230, 0);
 }
 
 .imgDiv > img
@@ -50,7 +46,7 @@ img
     margin: 10px;
     border-radius: 10px;
 }
-
+/*
 #loader
 {
     display: flex;
@@ -76,3 +72,4 @@ img
     font-weight: bolder;
     color: #a79d18;
 }
+*/
