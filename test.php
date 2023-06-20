@@ -6,8 +6,10 @@
   <title>Document</title>
 </head>
 <body>
-  <?php
-  echo "Hello World!";
-  ?>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+  password: <input type="text" name="password"><br>
+  <input type="submit">
+</form>
+
 </body>
 </html>
