@@ -6,7 +6,7 @@
   <title>Document</title>
 </head>
 <body>
-<form method="post" action="<?php echo htmlspecialchars( $_POST["password"]; );?>">
+<form method="post" action="echo-password.php">
   password: <input type="text" name="password"><br>
   <input type="submit">
 </form>
