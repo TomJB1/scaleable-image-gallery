@@ -25,7 +25,7 @@
 <body id="body">
         <h1>login failed</h1>
         <a href="login.php">Login</a>
-    <?php echo password_hash($_POST["password"], PASSWORD_DEFAULT)?> 
+    <?php echo ($_POST["password"])?> 
     <?php endif ?>
 </body>
 </html> 
