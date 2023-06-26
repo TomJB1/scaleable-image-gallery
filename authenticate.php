@@ -12,12 +12,14 @@ session_start();
 if('secret' == $_POST["password"]):?>
 
 <h1>pass</h1>
+<?php $_SESSION['logged_on'] = true; ?>
 
 <?php else: ?>
 
     <h1>access denied</h1>
 
 <?php endif ?>
+<?php  header("Location: gallery.php");?>
 <h1>Test</h1>
 <body>
 </html>
