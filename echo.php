@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php 
-    if(1 == 1)
+    if(2 > 1)
     {
         echo "working"
     }?>
