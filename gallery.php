@@ -7,7 +7,7 @@
     <title>Document</title>
     <?php
     
-    if('$2y$10$e5bo.pmNqczuWAUbwt5qAuT9QQVhtGJog.c2A6qilreW/kTv34pjS' == password_hash($_POST["password"], PASSWORD_DEFAULT)): ?>
+    if(password_hash($_POST["password"], PASSWORD_DEFAULT) == password_hash($_POST["password"], PASSWORD_DEFAULT)): ?>
     
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="script.js" defer></script>
