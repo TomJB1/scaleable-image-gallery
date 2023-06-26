@@ -1,11 +1,9 @@
 <?php
 session_start();
-if ( !isset($_SESSION['logged_on']) )
-{
-  header("Location: login.php");
-  exit;
-}
+if ( !isset($_SESSION['logged_on']) ):
 ?>
+<h1> access denied</h1>
+<?php else: ?>
 <!DOCTYPE html>
 <html>
 <head>
