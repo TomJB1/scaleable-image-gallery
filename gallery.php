@@ -18,7 +18,8 @@
             
     </div>
     <?php else: ?>
-        <h1>access denied</h1>
+        <h1>login failed</h1>
+        <a href="login.php">Login</a>
     <?php endif ?>
 </body>
 </html> 
