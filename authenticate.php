@@ -20,5 +20,5 @@ if('secret' == $_POST["password"]):?>
 
 <?php endif ?>
 <h1>Test</h1>
-<body>
+</body>
 </html>
