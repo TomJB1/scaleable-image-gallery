@@ -8,6 +8,7 @@
 </head>
 <body>
 <?php
+echo "it works"
 session_start();
 if('secret' == $_POST["password"]):?>
 
