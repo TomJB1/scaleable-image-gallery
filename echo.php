@@ -16,6 +16,6 @@ echo password_hash($_POST["password"], PASSWORD_DEFAULT)
 <?php if(password_hash($_POST["password"], PASSWORD_DEFAULT) == '$2y$10$5iAdKxZNcXQCjwBOGomVC.2XT0E6ozYzxOc71qwjAZHDh6KUz/fzG')
 {
     echo 'working'
-}
+}?>
 </body>
 </html>
