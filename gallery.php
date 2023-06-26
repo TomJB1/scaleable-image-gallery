@@ -1,3 +1,11 @@
+<?php
+session_start();
+if ( !isset($_SESSION['logged_on']) )
+{
+  header("Location: login.php");
+  exit;
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,16 +17,12 @@
     <script src="script.js" defer></script>
 </head>
 <body id="body">
-    <?php
-    if('secret' == $_POST["password"]): ?>
-        <div id="header">
-            <h1>Matt Brandis - Photo Gallery</h1>
-        </div>
-        <div id="main">
+    
+    <div id="header">
+        <h1>Matt Brandis - Photo Gallery</h1>
+    </div>
+    <div id="main">
             
-        </div>
-    <?php else: ?>
-        <h1>access denied</h1>
-    <?php endif ?>
+    </div>
 </body>
 </html> 
