@@ -6,10 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <?php 
-    if(2 > 1)
-    {
-        echo "working"
-    }?>
+<form method="post" action="">
+    password: <input type="text" name="password"><br>
+    <input type="submit">
+</form>
+<?php
+echo password_hash($_POST["password"], PASSWORD_DEFAULT)
+?>
 </body>
 </html>
