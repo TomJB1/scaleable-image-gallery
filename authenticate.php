@@ -19,7 +19,6 @@ if('secret' == $_POST["password"]):?>
     <h1>access denied</h1>
 
 <?php endif ?>
-<?php  header("Location: gallery.php");?>
 <h1>Test</h1>
 <body>
 </html>
