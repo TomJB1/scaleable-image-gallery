@@ -1,9 +1,4 @@
-<?php
-session_start();
-if ( !isset($_SESSION['logged_on']) ):
-?>
-<h1> access denied</h1>
-<?php else: ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,12 +10,16 @@ if ( !isset($_SESSION['logged_on']) ):
     <script src="script.js" defer></script>
 </head>
 <body id="body">
-    
+    <?php
+    if('secret' == $_POST["password"]): ?>
     <div id="header">
         <h1>Matt Brandis - Photo Gallery</h1>
     </div>
     <div id="main">
             
     </div>
+    <?php else: ?>
+        <h1>access denied</h1>
+    <?php endif ?>
 </body>
 </html> 
