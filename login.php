@@ -45,7 +45,7 @@ else
   <input type="password" name="pass" placeholder="*******">
   <input type="submit" name="submit_pass" value="DO SUBMIT">
   <p>"Password : 123"</p>
-  <p><font style="color:red;"><?php echo $error;?></font></p>
+  <p><?php echo $error;?></p>
  </form>
  <?php	
 }
