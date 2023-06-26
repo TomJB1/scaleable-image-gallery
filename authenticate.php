@@ -11,3 +11,4 @@ if('secret' == $_POST["password"])
     <h1>access denied</h1>
 
 <?php endif ?>
+<h1>Test</h1>
