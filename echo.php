@@ -6,6 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <?php echo "working"?>
+    <?php 
+    if(1 == 1)
+    {
+        echo "working"
+    }?>
 </body>
 </html>
