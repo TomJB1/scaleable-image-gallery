@@ -1,5 +1,3 @@
-<?php ini_set('session.save_path', '/tmp') ?>
-<?php session_start();?>
 <!DOCTYPE html>
 <html>
 <head>
