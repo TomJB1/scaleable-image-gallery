@@ -42,7 +42,8 @@ img
 .imgDiv
 {
     padding: 10px;
-    height: 300px;
+    max-height: 400px;
+    height: 40vh;
     display: flex;
 }
 /*
