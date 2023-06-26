@@ -6,7 +6,7 @@
   <title>Document</title>
 </head>
 <body>
-  <form method="post" action="gallery.php">
+  <form method="post" action="authenticate.php">
     password: <input type="text" name="password"><br>
     <input type="submit">
   </form>
