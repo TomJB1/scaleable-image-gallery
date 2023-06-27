@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <?php
-    $passToSite = $_POST["password"]
-    if(password_verify(($passToSite), '$2y$10$FfEK/s4aowsb.HSWyMEmE.W9U.010ykPnP0tI17lhPjzp0dACyoie')): ?>
+    $_SESSION["password"] = $_POST["password"];
+    if(password_verify(($_SESSION["password"]), '$2y$10$FfEK/s4aowsb.HSWyMEmE.W9U.010ykPnP0tI17lhPjzp0dACyoie')): ?>
     
     <link rel="stylesheet" type="text/css" href="home.css" />
     <script src="home.js" defer></script>
