@@ -16,6 +16,7 @@ $_SESSION["test"] = "12345";
 <?php
     echo $_SESSION["password"];
     echo $_SESSION["test"];
+    echo get_current_user();
 ?>
     <h1>works</h1>
 
