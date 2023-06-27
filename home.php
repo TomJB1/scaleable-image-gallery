@@ -25,15 +25,19 @@
         <a href="gallery.php">
         <div class="tile">
             <h1>Zambia</h1>
-            <div class="img">
+            <div class="imgDiv">
+                <img src="images/zambia/0.jpg">
             </div>
         </div>
         </a>
+        <a href="gallery.php">
         <div class="tile">
             <h1>Zambia</h1>
-            <div class="img">
+            <div class="imgDiv">
+                <img src="images/zambia/0.jpg">
             </div>
         </div>
+        </a>
     </div>
     <?php else: ?>
     <link rel="stylesheet" type="text/css" href="styles.css" />

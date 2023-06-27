@@ -10,16 +10,15 @@
     margin: 10px;
 }
 
-.img
+.imgDiv
 {
     overflow: hidden;
     height: 300px;
     width: 300px;
     display: flex;
-    background-image: url("images/zambia/0.jpg");
-    background-position: center;
-    background-size: cover;
 }
+
+.tile:hover > 
 
 
 .tile > h1 
