@@ -8,7 +8,8 @@
 </head>
 <body>
   <form method="post" action="home.php">
-    password: <input type="text" name="password"><br>
+    <h3>password:</h3>
+    <input type="text" name="password"><br>
     <input type="submit" value="Login">
   </form>
 
