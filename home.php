@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <?php
-    $_SESSION["password"] = $_POST["password"];
+    if (isset($_POST['password']) )
+    {
+        $_SESSION["password"] = $_POST["password"]; 
+    }
+    
     if(password_verify(($_SESSION["password"]), '$2y$10$FfEK/s4aowsb.HSWyMEmE.W9U.010ykPnP0tI17lhPjzp0dACyoie')): ?>
     
     <link rel="stylesheet" type="text/css" href="home.css" />
@@ -18,6 +22,7 @@
         <h1>Matt Brandis - Photo Gallery</h1>
     </div>
     <div id="main">
+        <a href="gallery.php">gallery</a>
         <div class="tile">
             <h1>Zambia</h1>
             <div class="img">
