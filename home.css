@@ -1,3 +1,8 @@
+body
+{
+    background-color: rgb(232, 226, 173);
+}
+
 #main
 {
     display: flex;
@@ -30,13 +35,22 @@
     transform: scale(1.05); 
 }
 
+#header
+{
+    font-family: roboto, sans-serif;
+    color: rgb(49, 49, 145);
+    text-align: center;
+}
+
 
 .tile > h1
 {
     margin-bottom: 0px;
     text-decoration: none;
     font-family: roboto, sans-serif;
+    color: rgb(49, 49, 145);
     color: black;
+    margin-left: 10px;
 }
 
 a:link { text-decoration: none; }
