@@ -1,4 +1,4 @@
-<?php session_start() 
+<?php session_start(); 
 $_SESSION["test"] = "12345";
 ?>
 <!DOCTYPE html>
