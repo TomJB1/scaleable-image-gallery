@@ -1,12 +1,14 @@
 #main
 {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .tile
 {
     width: 30%;
     min-width: 300px;
+    margin: 10px;
 }
 
 .img
@@ -18,4 +20,10 @@
     background-image: url("images/zambia/0.jpg");
     background-position: center;
     background-size: cover;
+}
+
+
+.tile > h1 
+{
+    margin-bottom: 0px;
 }
