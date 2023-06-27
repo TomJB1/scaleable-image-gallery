@@ -18,11 +18,31 @@
     display: flex;
 }
 
-.tile:hover > 
+.imgDiv > img
+{
+    width: 100%;
+    object-fit: cover;
+    transition: transform .2s;
+}
+
+.tile:hover > .imgDiv > img
+{
+    transform: scale(1.05); 
+}
 
 
-.tile > h1 
+.tile > h1
 {
     margin-bottom: 0px;
     text-decoration: none;
+    font-family: roboto, sans-serif;
+    color: black;
 }
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
