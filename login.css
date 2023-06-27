@@ -1,0 +1,14 @@
+form
+{
+    margin: auto;
+    max-width: 350px;
+    display: flex;
+    margin-top: 40vh;
+    flex-wrap: wrap;
+}
+
+input
+{
+    margin-right: 10px;
+    margin-left: 5px;
+}
