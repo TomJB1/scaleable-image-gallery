@@ -1,0 +1,21 @@
+#main
+{
+    display: flex;
+}
+
+.tile
+{
+    width: 30%;
+    min-width: 300px;
+}
+
+.img
+{
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    background-image: url("images/zambia/0.jpg");
+    background-position: center;
+    background-size: cover;
+}
