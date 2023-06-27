@@ -22,12 +22,13 @@
         <h1>Matt Brandis - Photo Gallery</h1>
     </div>
     <div id="main">
-        <a href="gallery.php">gallery</a>
+        <a href="gallery.php">
         <div class="tile">
             <h1>Zambia</h1>
             <div class="img">
             </div>
         </div>
+        </a>
         <div class="tile">
             <h1>Zambia</h1>
             <div class="img">
