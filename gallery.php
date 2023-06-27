@@ -8,7 +8,7 @@
     <title>Document</title>
     <?php
     
-    if(password_verify(($_SESSION["password"]), '$2y$10$FfEK/s4aowsb.HSWyMEmE.W9U.010ykPnP0tI17lhPjzp0dACyoie')) ?>
+    if(password_verify(($_SESSION["password"]), '$2y$10$FfEK/s4aowsb.HSWyMEmE.W9U.010ykPnP0tI17lhPjzp0dACyoie')): ?>
     
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="script.js" defer></script>
