@@ -9,10 +9,6 @@ const screenHeight = screen.height;
 const screenRatio = (screenWidth / screenHeight)*100;
 
 
-//currently does nothing FIX
-
-
-
 function AddImage(src) {
     var img = new Image();
     img.setAttribute("src", src);
@@ -34,7 +30,7 @@ function MakeDiv(id, classname, text="")
 
 for (let i = 0; i < numberofImages; i++)
 {
-    AddImage("images/"+i+".jpg");
+    AddImage("images/zambia/"+i+".jpg");
 }
 
 
