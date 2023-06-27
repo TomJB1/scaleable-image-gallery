@@ -1,4 +1,6 @@
-<?php session_start() ?>
+<?php session_start() 
+$_SESSION["test"] = "12345"
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +15,7 @@
 </form>
 <?php
     echo $_SESSION["password"];
+    echo $_SESSION["test"]
 ?>
     <h1>works</h1>
 
