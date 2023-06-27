@@ -11,9 +11,9 @@ const screenRatio = (screenWidth / screenHeight)*100;
 
 function AddImage(src) {
     var img = new Image();
+    img.loading = "lazy";
     img.setAttribute("src", src);
     img.id = src;
-    img.loading = "lazy";
     divName = "Div-" + src;
     MakeDiv(divName, "imgDiv");
     document.getElementById(divName).appendChild(img);
