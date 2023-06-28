@@ -57,8 +57,8 @@ img
     font-family: roboto, sans-serif;
     font-size: 30px;
     font-weight: bold;
-    box-shadow: 0px 0px 10px #a5a96d;
-  
+    box-shadow: 0px 0px 10px #00000017;
+    width: 100%;
 }
 /*
 #loader
