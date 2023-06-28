@@ -9,7 +9,7 @@ form
     margin: auto;
     max-width: 350px;
     display: flex;
-    margin-top: 40vh;
+    margin-top: 15vh;
     flex-wrap: wrap;
 }
 
@@ -29,4 +29,23 @@ form > h3
     color: rgb(0, 0, 0);
     margin: 0px;
     margin-top: 3px;
+}
+
+#title
+{
+    font-size: clamp(10px,15vw, 100px);
+    text-align: center;
+    font-family: Orbitron, roboto, sans-serif;
+    margin-top: 10vh;
+    margin-right: 5px;
+    margin-left: 5px;   
+}
+
+a
+{
+    margin: auto;
+    width: fit-content;
+    display: block;
+    font-size: 30px;
+    font-family: roboto, sans-serif;
 }
