@@ -6,7 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <?php echo $_POST["test"];
+    <?php
+    $input = json_decode(file_get_contents('php://input'), true);
+    echo $input['test'];
     echo "working" ?>
 </body>
 </html>
