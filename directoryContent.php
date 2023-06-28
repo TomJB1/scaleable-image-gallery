@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php echo  $_POST['test'] ?>
+    <?php echo $_POST['test'];
+    echo "working" ?>
 </body>
 </html>
