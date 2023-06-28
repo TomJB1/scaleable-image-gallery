@@ -1,11 +1,9 @@
-fetch("https://brandis-photos.uk.to/directoryContent.php", {
+let data = {test: "12345678910"};
+
+fetch("directoryContent.php", {
   method: "POST",
-  body: JSON.stringify({
-    test: "12345678910"
-  }),
-  headers: {
-    "Content-type": "application/json; charset=UTF-8"
-  }
-})
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+  headers: {'Content-Type': 'application/json'}, 
+  body: JSON.stringify(data)
+}).then(res => {
+  console.log("Request complete! response:", res);
+});
