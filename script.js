@@ -47,7 +47,7 @@ function MakeDiv(id, classname, text="")
     main.appendChild(div);
 }
 
-const headers = getFileNames(folder);
+const headers = getFileNames('images/'+folder);
 
 headers.forEach(header => {
   MakeDiv(header, 'header', header)
