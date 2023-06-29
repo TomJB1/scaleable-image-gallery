@@ -11,9 +11,12 @@ fetch("directoryContent.php", {
 .then(res => {
   console.log("Request complete! response:", res);
   titles = res.split(',');
-});
+})
+.then(createTiles());
 
-titles.forEach(title => {
+function createTiles()
+{
+    titles.forEach(title => {
     const link = document.createElement("a");
     link.href = "gallery.php#"+title;
     link.innerHTML = `
@@ -25,3 +28,4 @@ titles.forEach(title => {
     </div>`
     main.appendChild(link);
 });
+}
