@@ -11,8 +11,8 @@ fetch("directoryContent.php", {
 .then(res => {
   console.log("Request complete! response:", res);
   titles = res.split(',');
-})
-.then(createTiles());
+  createTiles();
+});
 
 function createTiles()
 {
@@ -27,5 +27,5 @@ function createTiles()
         </div>
     </div>`
     main.appendChild(link);
-});
+    });
 }
