@@ -8,6 +8,25 @@ const screenWidth = screen.width;
 const screenHeight = screen.height;
 const screenRatio = (screenWidth / screenHeight)*100;
 
+const urlArray = window.location.href.split('#')
+const folder = urlArray[urlArray.length -1];
+
+let data = {};
+
+function getFileNames(dir)
+{
+  data = {"dir": dir};
+  fetch("directoryContent.php", {
+    method: "POST",
+    headers: {'Content-Type': 'application/json'}, 
+    body: JSON.stringify(data)
+  })
+  .then(res => res.text())
+  .then(res => {
+    console.log("Request complete! response:", res);
+     return res.split(',');
+  });
+}
 
 function AddImage(src) {
     var img = new Image();
@@ -28,10 +47,17 @@ function MakeDiv(id, classname, text="")
     main.appendChild(div);
 }
 
-for (let i = 0; i < numberofImages; i++)
-{
-    AddImage("images/zambia/"+i+".jpg");
-}
+const headers = getFileNames(folder);
+
+headers.forEach(header => {
+  MakeDiv(header, 'header', header)
+  for (let i = 0; i < numberofImages; i++)
+  {
+    AddImage(`images/${header}/"+i+".jpg`);
+  }
+});
+
+
 
 
 
