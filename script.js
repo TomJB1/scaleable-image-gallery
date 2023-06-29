@@ -13,7 +13,7 @@ const folder = urlArray[urlArray.length -1];
 
 let data = {};
 
-function getFileNames(dir, returnFunction, passthrough)
+function getFileNames(dir, returnFunction, passthrough=undefined)
 {
   data = {"dir": dir};
   fetch("directoryContent.php", {
