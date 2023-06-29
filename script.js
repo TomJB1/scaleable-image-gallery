@@ -54,7 +54,7 @@ getFileNames(folderPath, 'addHeaders');
 function addHeaders(headers, other) //the other variable is not needed but this will break if it is removed
 {
   headers.forEach(header => {
-    let folderPath = 'images/'+folder;
+    let folderPath = 'images/'+folder+'/'+header;
     MakeDiv(header, 'header', header)
     getFileNames(folderPath, 'addPhotos', folderPath);
   });
