@@ -57,7 +57,7 @@ function addHeaders(headers)
     MakeDiv(header, 'header', header)
     for (let i = 0; i < numberofImages; i++)
     {
-      AddImage(`images/${header}/"+i+".jpg`);
+      AddImage(`images/${header}/`+i+`.jpg`);
     }
   });
 }
