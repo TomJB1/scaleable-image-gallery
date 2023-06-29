@@ -8,7 +8,7 @@ fetch("directoryContent.php", {
   body: JSON.stringify(data)
 }).then(res => {
   console.log("Request complete! response:", res);
-  titles = res.split(',');
+  titles = res.text().split(',');
 });
 
 titles.forEach(title => {
