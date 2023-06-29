@@ -55,13 +55,14 @@ function addHeaders(headers, other) //the other variable is not needed but this 
 {
   headers.forEach(header => {
     let headerPath = 'images/'+folder+'/'+header;
-    MakeDiv(header, 'header', header)
-    getFileNames(headerPath, 'addPhotos', headerPath);
+    getFileNames(headerPath, 'addPhotos', header);
   });
 }
 
-function addPhotos(imageNames, path)
+function addPhotos(imageNames, header)
 {
+  let path = 'images/'+folder+'/'+header;
+  MakeDiv(header, 'header', header)
   for (let i = 0; i < imageNames.length; i++)
     {
       AddImage(path+'/'+imageNames[i]);
