@@ -47,18 +47,16 @@ function MakeDiv(id, classname, text="")
     main.appendChild(div);
 }
 
-const folderPath = 'images/'+folder
-const headers = getFileNames(folderPath).then(
+const folderPath = 'images/'+folder;
+const headers = await getFileNames(folderPath);
 
-  headers.forEach(header => {
-    MakeDiv(header, 'header', header)
-    for (let i = 0; i < numberofImages; i++)
-    {
-      AddImage(`images/${header}/"+i+".jpg`);
-    }
-  })
-  
-);
+headers.forEach(header => {
+  MakeDiv(header, 'header', header)
+  for (let i = 0; i < numberofImages; i++)
+  {
+    AddImage(`images/${header}/"+i+".jpg`);
+  }
+});
 
 
 
