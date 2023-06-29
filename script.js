@@ -48,23 +48,23 @@ function MakeDiv(id, classname, text="")
     main.appendChild(div);
 }
 
-const folderPath = 'images/'+folder;
+
 getFileNames(folderPath, 'addHeaders');
 
 function addHeaders(headers, other) //the other variable is not needed but this will break if it is removed
 {
   headers.forEach(header => {
-    path = 'images/'+header;
-    MakeDiv(path, 'header', header)
-    getFileNames(folderPath, 'addPhotos', header);
+    let folderPath = 'images/'+folder;
+    MakeDiv(header, 'header', header)
+    getFileNames(folderPath, 'addPhotos', folderPath);
   });
 }
 
-function addPhotos(imageNames, headerName)
+function addPhotos(imageNames, path)
 {
   for (let i = 0; i < imageNames.length; i++)
     {
-      AddImage(`images/${headerName}/`+imageNames[i]+`.jpg`);
+      AddImage(`images/${path}/`+imageNames[i]+`.jpg`);
     }
 }
 
