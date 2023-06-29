@@ -3,6 +3,8 @@
     $fileArray = scandir(($input['dir']));
     echo $fileArray[1];
     echo "break";
+    echo $fileArray;
+    echo "break";
     echo $input;
     echo "break";
     echo $input['dir'];?>
