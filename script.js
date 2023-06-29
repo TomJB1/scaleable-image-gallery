@@ -13,7 +13,7 @@ const folder = urlArray[urlArray.length -1];
 
 let data = {};
 
-function getFileNames(dir)
+function getFileNames(dir, returnFunction)
 {
   data = {"dir": dir};
   fetch("directoryContent.php", {
@@ -24,7 +24,8 @@ function getFileNames(dir)
   .then(res => res.text())
   .then(res => {
     console.log("Request complete! response:", res);
-     return res.split(',');
+    window[returnFunction](res.split(','));
+    return;
   });
 }
 
@@ -48,15 +49,19 @@ function MakeDiv(id, classname, text="")
 }
 
 const folderPath = 'images/'+folder;
-const headers = await getFileNames(folderPath);
+const headers = getFileNames(folderPath, 'addHeaders');
 
-headers.forEach(header => {
-  MakeDiv(header, 'header', header)
-  for (let i = 0; i < numberofImages; i++)
-  {
-    AddImage(`images/${header}/"+i+".jpg`);
-  }
-});
+function addHeaders()
+{
+  headers.forEach(header => {
+    MakeDiv(header, 'header', header)
+    for (let i = 0; i < numberofImages; i++)
+    {
+      AddImage(`images/${header}/"+i+".jpg`);
+    }
+  });
+}
+
 
 
 
