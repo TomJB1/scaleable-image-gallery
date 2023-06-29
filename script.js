@@ -49,9 +49,9 @@ function MakeDiv(id, classname, text="")
 }
 
 const folderPath = 'images/'+folder;
-const headers = getFileNames(folderPath, 'addHeaders');
+getFileNames(folderPath, 'addHeaders');
 
-function addHeaders()
+function addHeaders(headers)
 {
   headers.forEach(header => {
     MakeDiv(header, 'header', header)
