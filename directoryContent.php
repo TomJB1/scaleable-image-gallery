@@ -2,7 +2,7 @@
     $input = json_decode(file_get_contents('php://input'), true);
     $fileArray = scandir(($input['dir']));
     echo $fileArray[1];
-    echo "--";
+    echo "break";
     echo $input;
-    echo "--";
+    echo "break";
     echo $input['dir'];?>
