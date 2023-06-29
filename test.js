@@ -1,4 +1,4 @@
-let data = {"dir": "scaleable-image-gallery/images"};
+let data = {"dir": "images"};
 
 fetch("directoryContent.php", {
   method: "POST",
