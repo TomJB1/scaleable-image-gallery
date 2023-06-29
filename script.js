@@ -64,7 +64,7 @@ function addPhotos(imageNames, path)
 {
   for (let i = 0; i < imageNames.length; i++)
     {
-      AddImage(`images/${path}/`+imageNames[i]+`.jpg`);
+      AddImage(`${path}/`+imageNames[i]+`.jpg`);
     }
 }
 
