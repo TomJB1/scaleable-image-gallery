@@ -20,22 +20,7 @@ session_start(); ?>
         <h1>Matt Brandis - Photo Gallery</h1>
     </div>
     <div id="main">
-        <a href="gallery.php">
-        <div class="tile">
-            <h1>Zambia</h1>
-            <div class="imgDiv">
-                <img src="images/zambia/0.jpg">
-            </div>
-        </div>
-        </a>
-        <a href="gallery.php">
-        <div class="tile">
-            <h1>Zambia</h1>
-            <div class="imgDiv">
-                <img src="images/zambia/0.jpg">
-            </div>
-        </div>
-        </a>
+        <!-- tiles put here by js -->
     </div>
     <?php else: ?>
     <link rel="stylesheet" type="text/css" href="styles.css" />
