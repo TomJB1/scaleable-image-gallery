@@ -28,5 +28,8 @@
         <h1>login failed</h1>
         <a href="login.php">Login</a>
     <?php endif ?>
+<div id="pop-up">
+    <img>
+</div>
 </body>
 </html> 
