@@ -16,7 +16,7 @@ let data = {};
 function getFileNames(dir, returnFunction, passthrough=undefined)
 {
   data = {"dir": dir};
-  fetch("directoryContent.php", {
+  fetch("/directoryContent.php", {
     method: "POST",
     headers: {'Content-Type': 'application/json'}, 
     body: JSON.stringify(data)
