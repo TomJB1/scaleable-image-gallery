@@ -11,6 +11,8 @@ const title = urlArray[urlArray.length -1];
 const number = urlArray[urlArray.length -2];
 const folder = number+'-'+title;
 
+const popupImage = document.getElementById("popupImage")
+
 let data = {};
 
 function getFileNames(dir, returnFunction, passthrough=undefined)
@@ -73,7 +75,8 @@ function addPhotos(imageNames, header)
 
 function openPopup(picture)
 {
-  console.log(picture.target.id)
+  console.log(picture.target.id);
+  popupImage.src = picture.target.id;
 }
 
 

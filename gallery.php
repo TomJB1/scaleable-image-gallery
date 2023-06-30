@@ -29,7 +29,7 @@
         <a href="login.php">Login</a>
     <?php endif ?>
 <div id="pop-up">
-    <img>
+    <img id="popupImage">
 </div>
 </body>
 </html> 
