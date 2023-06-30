@@ -34,7 +34,7 @@ function AddImage(src) {
     img.loading = "lazy";
     img.setAttribute("src", src);
     img.id = src;
-    divName = "Div-" + src;
+    divName = src;
     MakeDiv(divName, "imgDiv");
     document.getElementById(divName).appendChild(img);
 }
@@ -73,7 +73,7 @@ function addPhotos(imageNames, header)
 
 function openPopup(picture)
 {
-  console.log(picture)
+  console.log(picture.target.id)
 }
 
 
