@@ -23,7 +23,7 @@ img
 #header > h1
 {
     font-family: roboto, sans-serif;
-    color: rgb(49, 49, 145);
+    color: rgb(10, 10, 89);
 }
 
 #main
@@ -52,13 +52,14 @@ img
 {
     position: sticky;
     top: 0px;
-    background-color: #fffccb;
+    background-color: #0e2d8b;
     padding-left: 20px;
     font-family: roboto, sans-serif;
     font-size: 30px;
     font-weight: bold;
     box-shadow: 0px 0px 10px #00000017;
     width: 100%;
+    color: #f8ffd9;
 }
 /*
 #loader
