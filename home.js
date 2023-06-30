@@ -17,12 +17,12 @@ fetch("directoryContent.php", {
 function createTiles()
 {
     titles.forEach(title => {
-    title = title.split('-')[1];
+    titleName = title.split('-')[1];
     const link = document.createElement("a");
-    link.href = "gallery.php#"+title;
+    link.href = "gallery.php#"+titleName;
     link.innerHTML = `
     <div class="tile">
-        <h1>${title}</h1>
+        <h1>${titleName}</h1>
         <div class="imgDiv">
             <img src="images/${title}/display.jpg">
         </div>
