@@ -76,8 +76,12 @@ function addPhotos(imageNames, header)
 
 function openPopup(picture)
 {
-  popupImage.src = picture.target.id;
-  popupWrap.style.display = "flex";
+  if(picture.target.class == 'imgDiv')
+  {
+    popupImage.src = picture.target.id;
+    popupWrap.style.display = "flex";
+  }
+  
 }
 
 function closePopup()
