@@ -24,7 +24,7 @@ function createTiles()
     <div class="tile">
         <h1>${title}</h1>
         <div class="imgDiv">
-            <img src="images/${title}/0.jpg">
+            <img src="images/${title}/display.jpg">
         </div>
     </div>`
     main.appendChild(link);
