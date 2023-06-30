@@ -34,7 +34,7 @@ function AddImage(src) {
     img.loading = "lazy";
     img.setAttribute("src", src);
     img.id = src;
-    img.addEventListener('click', openPopup);
+    img.addEventListener("click", openPopup);
     divName = "Div-" + src;
     MakeDiv(divName, "imgDiv");
     document.getElementById(divName).appendChild(img);
