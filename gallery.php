@@ -30,7 +30,7 @@
     <?php endif ?>
 <div id="pop-up">
     <img id="popupImage">
-    <div id="closeButton">X</div>
+    <div id="closeButton" onclick="closePopup()">X</div>
 </div>
 </body>
 </html> 

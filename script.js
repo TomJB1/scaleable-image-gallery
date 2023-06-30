@@ -76,9 +76,13 @@ function addPhotos(imageNames, header)
 
 function openPopup(picture)
 {
-  console.log(picture.target.id);
   popupImage.src = picture.target.id;
   popupWrap.style.display = "flex";
+}
+
+function closePopup()
+{
+  popupWrap.style.display = "none";
 }
 
 
