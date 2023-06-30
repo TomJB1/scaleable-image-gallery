@@ -11,7 +11,8 @@ const title = urlArray[urlArray.length -1];
 const number = urlArray[urlArray.length -2];
 const folder = number+'-'+title;
 
-const popupImage = document.getElementById("popupImage")
+const popupImage = document.getElementById("popupImage");
+const popupWrap = document.getElementById("pop-up")
 
 let data = {};
 
@@ -77,6 +78,7 @@ function openPopup(picture)
 {
   console.log(picture.target.id);
   popupImage.src = picture.target.id;
+  popupWrap.style.display = "flex";
 }
 
 
