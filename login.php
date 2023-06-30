@@ -11,7 +11,7 @@
   <div id="title">Brandis Photos</div>
   <form method="post" action="home.php">
     <h3>password:</h3>
-    <input type="text" name="password"><br>
+    <input autocomplete="off" type="text" name="password"><br>
     <input type="submit" value="Login">
   </form>
 
