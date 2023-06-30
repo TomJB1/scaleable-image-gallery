@@ -16,6 +16,7 @@ session_start(); ?>
     <script src="home.js" defer></script>
 </head>
 <body id="body">
+    <a href="/logout.php">Log Out</a>
     <div id="header">
         <h1>Matt Brandis - Photo Gallery</h1>
     </div>
