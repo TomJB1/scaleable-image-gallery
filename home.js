@@ -17,6 +17,7 @@ fetch("directoryContent.php", {
 function createTiles()
 {
     titles.forEach(title => {
+    title = title.split('-')[2];
     const link = document.createElement("a");
     link.href = "gallery.php#"+title;
     link.innerHTML = `
