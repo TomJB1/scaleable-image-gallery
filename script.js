@@ -65,7 +65,7 @@ function addPhotos(imageNames, header)
   MakeDiv(header, 'header', header)
   for (let i = 0; i < imageNames.length; i++)
     {
-      AddImage(path+'/'+imageNames[i]);
+      AddImage('/'+path+'/'+imageNames[i]);
     }
 }
 
