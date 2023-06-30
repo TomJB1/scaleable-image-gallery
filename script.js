@@ -1,5 +1,3 @@
-const numberofImages = 63;
-
 const main = document.getElementById("main");
 
 const loader = document.getElementById("loader");
@@ -8,8 +6,10 @@ const screenWidth = screen.width;
 const screenHeight = screen.height;
 const screenRatio = (screenWidth / screenHeight)*100;
 
-const urlArray = window.location.href.split('#')
-const folder = urlArray[urlArray.length -1];
+const urlArray = window.location.href.split('/')
+const title = urlArray[urlArray.length -1];
+const number = urlArray[urlArray.length -2];
+const folder = number+'-'+title;
 
 let data = {};
 

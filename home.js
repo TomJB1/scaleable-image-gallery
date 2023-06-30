@@ -18,8 +18,9 @@ function createTiles()
 {
     titles.forEach(title => {
     titleName = title.split('-')[1];
+    number = title.split('-')[0];
     const link = document.createElement("a");
-    link.href = "gallery.php#"+titleName;
+    link.href = "gallery/"+number+'/'+titleName;
     link.innerHTML = `
     <div class="tile">
         <h1>${titleName}</h1>
