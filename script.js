@@ -76,7 +76,7 @@ function addPhotos(imageNames, header)
 
 function openPopup(picture)
 {
-  if(picture.className == "imgDiv")
+  if(picture.target.className == "imgDiv")
   {
     popupImage.src = picture.target.id;
     popupWrap.style.display = "flex";
