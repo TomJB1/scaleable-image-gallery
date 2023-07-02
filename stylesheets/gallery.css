@@ -114,6 +114,11 @@ img
     font-size: 18px;
 }
 
+#logoutWrapper
+{
+    height: 0px;
+}
+
 /*
 #loader
 {

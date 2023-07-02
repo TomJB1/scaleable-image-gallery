@@ -60,3 +60,29 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 
 a:active { text-decoration: none; }
+
+#logout
+{
+    font-family: roboto, sans-serif;
+    text-decoration-line: none;
+    color: #fffff9;
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #001771;
+    width: fit-content;
+    padding: 0.3em;
+    border-radius: 2px;
+    font-size: 15px;
+    transition: all 0.1s;
+}
+
+#logout:hover
+{
+    font-size: 18px;
+}
+
+#logoutWrapper
+{
+    height: 0px;
+}
