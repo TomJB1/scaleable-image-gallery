@@ -2,6 +2,8 @@ let data = {"dir": "images"};
 let titles = [];
 const main = document.getElementById("main");
 
+const loading = document.getElementById("loading");
+
 fetch("directoryContent.php", {
   method: "POST",
   headers: {'Content-Type': 'application/json'}, 
@@ -12,6 +14,7 @@ fetch("directoryContent.php", {
   console.log("Request complete! response:", res);
   titles = res.split(',');
   createTiles();
+  loading.remove();
 });
 
 function createTiles()

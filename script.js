@@ -12,7 +12,9 @@ const number = urlArray[urlArray.length -2];
 const folder = number+'-'+title;
 
 const popupImage = document.getElementById("popupImage");
-const popupWrap = document.getElementById("pop-up")
+const popupWrap = document.getElementById("pop-up");
+
+const loading = document.getElementById("loading");
 
 let data = {};
 
@@ -53,6 +55,7 @@ function MakeDiv(id, classname, text="")
 }
 
 let folderPath = 'images/'+folder;
+loading.remove();
 getFileNames(folderPath, 'addHeaders');
 
 function addHeaders(headers, other) //the other variable is not needed but this will break if it is removed
