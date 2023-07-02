@@ -25,6 +25,7 @@ session_start(); ?>
     </div>
     <?php else: ?>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta http-equiv="Refresh" content="0; url='https://brandis-photos.uk.to/login.php'" />
 </head>
 <body id="body">
         <h1>login failed</h1>
