@@ -57,7 +57,8 @@ getFileNames(folderPath, 'addHeaders');
 
 function addHeaders(headers, other) //the other variable is not needed but this will break if it is removed
 {
-  headers = headers.filter(n => n !== 'display.jpg'); 
+  headers = headers.filter(n => n !== 'display.jpg');
+  headers = headers.toReversed();
   headers.forEach(header => {
     let headerPath = 'images/'+folder+'/'+header;
     getFileNames(headerPath, 'addPhotos', header);
