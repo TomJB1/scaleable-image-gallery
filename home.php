@@ -13,6 +13,7 @@ session_start(); ?>
     if((password_verify(($_POST['password']), '$2y$10$FfEK/s4aowsb.HSWyMEmE.W9U.010ykPnP0tI17lhPjzp0dACyoie')) || $_SESSION["loggedIn"] == true): ?>
     <?php $_SESSION["loggedIn"] = true;  ?>
     <link rel="stylesheet" type="text/css" href="/stylesheets/home.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/general.css" />
     <script src="home.js" defer></script>
 </head>
 <body id="body">
@@ -24,6 +25,9 @@ session_start(); ?>
     </div>
     <div id="main">
         <!-- tiles put here by js -->
+    </div>
+    <div id="loading">
+        <div id="loadingText">Loading...</div>
     </div>
     <?php else: ?>
     <link rel="stylesheet" type="text/css" href="styles.css" />

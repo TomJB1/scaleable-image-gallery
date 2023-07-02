@@ -12,6 +12,7 @@
     <?php $_SESSION["loggedIn"] = true;  ?>
     
     <link rel="stylesheet" type="text/css" href="/stylesheets/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/general.css" />
     <script src="/script.js" defer></script>
 </head>
 <body id="body">
@@ -23,6 +24,9 @@
     </div>
     <div id="main">
             
+    </div>
+    <div id="loading">
+        <div id="loadingText">Loading...</div>
     </div>
     <?php else: ?>
     <link rel="stylesheet" type="text/css" href="styles.css" />

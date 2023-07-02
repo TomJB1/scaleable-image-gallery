@@ -1,0 +1,49 @@
+#logout
+{
+    font-family: roboto, sans-serif;
+    text-decoration-line: none;
+    color: #fffff9;
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #001771;
+    width: fit-content;
+    padding: 0.3em;
+    border-radius: 2px;
+    font-size: 15px;
+    transition: all 0.1s;
+}
+
+#logout:hover
+{
+    font-size: 18px;
+}
+
+#logoutWrapper
+{
+    height: 0px;
+}
+
+#loading
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+#loadingText
+{
+    font-size: 10vw;
+    margin: auto;
+    margin-top: auto;
+    width: 0px;
+    margin-top: 50vh;
+    background-color: #bfc1eb;
+    text-align: center;
+    width: fit-content;
+    padding: 1vw;
+    border-radius: 1vw;
+    font-family: roboto, sans-serif;
+    color: #1b007b;
+}

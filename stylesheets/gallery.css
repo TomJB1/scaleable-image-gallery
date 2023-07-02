@@ -93,32 +93,6 @@ img
     font-family: roboto, sans-serif;
 }
 
-#logout
-{
-    font-family: roboto, sans-serif;
-    text-decoration-line: none;
-    color: #fffff9;
-    display: block;
-    margin-top: 20px;
-    margin-left: 20px;
-    background-color: #001771;
-    width: fit-content;
-    padding: 0.3em;
-    border-radius: 2px;
-    font-size: 15px;
-    transition: all 0.1s;
-}
-
-#logout:hover
-{
-    font-size: 18px;
-}
-
-#logoutWrapper
-{
-    height: 0px;
-}
-
 /*
 #loader
 {
