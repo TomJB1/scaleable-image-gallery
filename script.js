@@ -67,7 +67,8 @@ function addHeaders(headers, other) //the other variable is not needed but this 
 function addPhotos(imageNames, header)
 {
   let path = 'images/'+folder+'/'+header;
-  MakeDiv(header, 'header', header)
+  let title = header.split(',')[1];
+  MakeDiv(header, 'header', title)
   for (let i = 0; i < imageNames.length; i++)
     {
       AddImage('/'+path+'/'+imageNames[i]);
