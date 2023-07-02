@@ -15,7 +15,7 @@
     <script src="/script.js" defer></script>
 </head>
 <body id="body">
-    <a href="/logout">Log Out</a>
+    <a href="/logout" id="logout">Log Out</a>
     <div id="header">
         <h1>Matt Brandis - Photo Gallery</h1>
     </div>
