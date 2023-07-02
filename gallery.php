@@ -15,7 +15,7 @@
     <script src="/script.js" defer></script>
 </head>
 <body id="body">
-    <a href="/logout.php">Log Out</a>
+    <a href="/logout">Log Out</a>
     <div id="header">
         <h1>Matt Brandis - Photo Gallery</h1>
     </div>
@@ -24,11 +24,11 @@
     </div>
     <?php else: ?>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <meta http-equiv="Refresh" content="0; url='https://brandis-photos.uk.to/login.php'" />
+    <meta http-equiv="Refresh" content="0; url='https://brandis-photos.uk.to/login'" />
 </head>
 <body id="body">
         <h1>login failed</h1>
-        <a href="login.php">Login</a>
+        <a href="login">Login</a>
     <?php endif ?>
 <div id="pop-up">
     <img id="popupImage">
