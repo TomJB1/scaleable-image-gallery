@@ -34,7 +34,7 @@ function getFileNames(dir, returnFunction, passthrough=undefined)
   });
 }
 
-function AddImage(src, smallSrc) {
+function AddPlaceholder(src, smallSrc) {
     var placeholder = new Image();
     placeholder.loading = "lazy";
     placeholder.setAttribute("src", smallSrc);
@@ -45,6 +45,11 @@ function AddImage(src, smallSrc) {
     MakeDiv(divName, "imgDiv");
     let divElement = document.getElementById(divName);
     divElement.appendChild(placeholder);
+}
+
+function AddImages(imgDivArray)
+{
+  console.log(imgDivArray)
 }
 
 function MakeDiv(id, classname, text="")
@@ -78,8 +83,10 @@ function addPhotos(imageNames, header)
   MakeDiv(header, 'header', title)
   for (let i = 0; i < imageNames.length; i++)
     {
-      AddImage(('/'+path+'/'+imageNames[i]), ('/'+path+'/small/'+imageNames[i]));
+      AddPlaceholder(('/'+path+'/'+imageNames[i]), ('/'+path+'/small/'+imageNames[i]));
     }
+  let imageDivs = getElementsByClass('imgDiv');
+  AddImages(imageDivs);
 }
 
 function openPopup(picture)

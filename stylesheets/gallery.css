@@ -47,6 +47,11 @@ img
 
 .placeholder
 {
+    position: relative;
+}
+
+.picture
+{
     position: absolute;
     margin: 10px;
 }
