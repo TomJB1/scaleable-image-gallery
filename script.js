@@ -67,7 +67,9 @@ function AddImages(imgDivArray)
 
 function removePlaceholder(image)
 {
-  console.log(image);
+  seletor = 'img#placeholder.'+(image.target.id).replaceAll('/', '\\/');
+  let placeholder = document.querySelector(seletor);
+  console.log(placeholder);
 }
 
 function MakeDiv(id, classname, text="")
