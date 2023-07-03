@@ -34,7 +34,7 @@ function getFileNames(dir, returnFunction, passthrough=undefined)
   });
 }
 
-function AddImage(src) {
+function AddImage(src, smallSrc) {
     var placeholder = new Image();
     placeholder.loading = "lazy";
     placeholder.setAttribute("src", src);
@@ -44,7 +44,7 @@ function AddImage(src) {
 
     var img = new Image();
     img.loading = "lazy";
-    img.setAttribute("src", src);
+    img.setAttribute("src", smallSrc);
     img.id = src;
     divName = src;
 
@@ -85,7 +85,7 @@ function addPhotos(imageNames, header)
   MakeDiv(header, 'header', title)
   for (let i = 0; i < imageNames.length; i++)
     {
-      AddImage('/'+path+'/'+imageNames[i]);
+      AddImage(('/'+path+'/'+imageNames[i]), ('/'+path+'/small/'+imageNames[i]));
     }
 }
 
