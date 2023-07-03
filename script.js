@@ -59,9 +59,15 @@ function AddImages(imgDivArray)
     picture.setAttribute("src", src);
     picture.id = src;
     picture.className = "picture";
+    picture.addEventListener('onload', removePlaceholder)
     div.appendChild(picture);
 
   }
+}
+
+function removePlaceholder(image)
+{
+  console.log(image);
 }
 
 function MakeDiv(id, classname, text="")
