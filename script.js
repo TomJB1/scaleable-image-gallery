@@ -35,13 +35,23 @@ function getFileNames(dir, returnFunction, passthrough=undefined)
 }
 
 function AddImage(src) {
+    var placeholder = new Image();
+    placeholder.loading = "lazy";
+    placeholder.setAttribute("src", src);
+    placeholder.id = src;
+    placeholder.className = "placeholder";
+
+
     var img = new Image();
     img.loading = "lazy";
     img.setAttribute("src", src);
     img.id = src;
     divName = src;
+
     MakeDiv(divName, "imgDiv");
-    document.getElementById(divName).appendChild(img);
+    let divElement = document.getElementById(divName);
+    divElement.appendChild(img);
+    divElement.appendChild(placeholder);
 }
 
 function MakeDiv(id, classname, text="")
