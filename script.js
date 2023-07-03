@@ -59,7 +59,7 @@ function AddImages(imgDivArray)
     picture.setAttribute("src", src);
     picture.id = src;
     picture.className = "picture";
-    picture.addEventListener('onload', removePlaceholder)
+    picture.addEventListener("load", removePlaceholder)
     div.appendChild(picture);
 
   }
