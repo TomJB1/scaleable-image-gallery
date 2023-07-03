@@ -102,6 +102,7 @@ function addPhotos(imageNames, header)
   let path = 'images/'+folder+'/'+header;
   headerArray = header.split('-');
   let title = headerArray[headerArray.length - 1];
+  imageNames = imageNames.filter(n => n !== 'small');
   MakeDiv(header, 'header', title)
   for (let i = 0; i < imageNames.length; i++)
     {
