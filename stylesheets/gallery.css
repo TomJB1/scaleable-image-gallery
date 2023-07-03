@@ -49,6 +49,7 @@ img
 {
     position: relative;
     z-index: 1;
+    transition: opacity 0.1s ease-in-out;
 }
 
 .picture
