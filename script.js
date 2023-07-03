@@ -37,14 +37,14 @@ function getFileNames(dir, returnFunction, passthrough=undefined)
 function AddImage(src, smallSrc) {
     var placeholder = new Image();
     placeholder.loading = "lazy";
-    placeholder.setAttribute("src", src);
+    placeholder.setAttribute("src", smallSrc);
     placeholder.id = src;
     placeholder.className = "placeholder";
 
 
     var img = new Image();
     img.loading = "lazy";
-    img.setAttribute("src", smallSrc);
+    img.setAttribute("src", src);
     img.id = src;
     divName = src;
 
