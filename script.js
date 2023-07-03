@@ -40,6 +40,7 @@ function AddImage(src, smallSrc) {
     placeholder.setAttribute("src", smallSrc);
     placeholder.id = src;
     placeholder.className = "placeholder";
+    divName = src;
 
     MakeDiv(divName, "imgDiv");
     let divElement = document.getElementById(divName);
