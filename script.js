@@ -41,16 +41,8 @@ function AddImage(src, smallSrc) {
     placeholder.id = src;
     placeholder.className = "placeholder";
 
-
-    var img = new Image();
-    img.loading = "lazy";
-    img.setAttribute("src", src);
-    img.id = src;
-    divName = src;
-
     MakeDiv(divName, "imgDiv");
     let divElement = document.getElementById(divName);
-    divElement.appendChild(img);
     divElement.appendChild(placeholder);
 }
 
