@@ -49,7 +49,19 @@ function AddPlaceholder(src, smallSrc) {
 
 function AddImages(imgDivArray)
 {
-  console.log(imgDivArray)
+  for (let i = 0; i < imgDivArray.length; i++)
+  {
+    let div = imgDivArray[i];
+    src = div.id;
+
+    var picture = new Image();
+    picture.loading = "lazy";
+    picture.setAttribute("src", src);
+    picture.id = src;
+    picture.className = "picture";
+    div.appendChild(picture);
+
+  }
 }
 
 function MakeDiv(id, classname, text="")
