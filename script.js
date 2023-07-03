@@ -85,7 +85,7 @@ function addPhotos(imageNames, header)
     {
       AddPlaceholder(('/'+path+'/'+imageNames[i]), ('/'+path+'/small/'+imageNames[i]));
     }
-  let imageDivs = getElementsByClassName('imgDiv');
+  let imageDivs = document.getElementsByClassName('imgDiv');
   AddImages(imageDivs);
 }
 
