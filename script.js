@@ -71,6 +71,7 @@ function removePlaceholder(image)
   console.log(seletor);
   let placeholder = document.querySelector(seletor);
   console.log(placeholder);
+  placeholder.style.opacity = '0';
 }
 
 function MakeDiv(id, classname, text="")
