@@ -47,8 +47,9 @@ function AddPlaceholder(src, smallSrc) {
     divElement.appendChild(placeholder);
 }
 
-function AddImages(imgDivArray)
+function AddImages()
 {
+  let imgDivArray = document.getElementsByClassName('imgDiv');
   for (let i = 0; i < imgDivArray.length; i++)
   {
     let div = imgDivArray[i];
@@ -95,6 +96,8 @@ function addHeaders(headers, other) //the other variable is not needed but this 
     let headerPath = 'images/'+folder+'/'+header;
     getFileNames(headerPath, 'addPhotos', header);
   });
+  
+  AddImages();
 }
 
 function addPhotos(imageNames, header)
@@ -108,8 +111,6 @@ function addPhotos(imageNames, header)
     {
       AddPlaceholder(('/'+path+'/'+imageNames[i]), ('/'+path+'/small/'+imageNames[i]));
     }
-  let imageDivs = document.getElementsByClassName('imgDiv');
-  AddImages(imageDivs);
 }
 
 function openPopup(picture)
