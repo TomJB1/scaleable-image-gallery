@@ -15,8 +15,8 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/general.css" />
     <script src="/script.js" defer></script>
 
-    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
-    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
 </head>
 <body id="body">
     <div id="logoutWrapper">

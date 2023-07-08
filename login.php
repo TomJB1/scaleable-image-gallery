@@ -7,8 +7,8 @@
   <link rel="stylesheet" type="text/css" href="/stylesheets/login.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
-  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
 </head>
 <body>
   <div id="title">Brandis Photos</div>
