@@ -27,7 +27,7 @@ session_start(); ?>
 </head>
 <body id="body">
     <div id="logoutWrapper">
-        <a href="/logout" id="logout">Log Out</a>
+        <a href="/logout.php" id="logout">Log Out</a>
     </div>
     <div id="header">
         <h1>Matt Brandis - Photo Gallery</h1>
