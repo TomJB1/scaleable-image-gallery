@@ -22,7 +22,7 @@ $_SESSION["loggedIn"] = false;  ?>
 <body>
 <?php if($_SESSION["loggedIn"] == false):?>
     <h1 id="title">Logged Out</h1>
-    <a href="/login">Login</a>
+    <a href="/login.php">Login</a>
 <?php endif ?>
 </body>
 </html>

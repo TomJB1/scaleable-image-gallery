@@ -26,7 +26,7 @@
 </head>
 <body id="body">
     <div id="logoutWrapper">
-        <a href="/logout" id="logout">Log Out</a>
+        <a href="/logout.php" id="logout">Log Out</a>
     </div>
     <div id="header">
         <h1>Matt Brandis - Photo Gallery</h1>
@@ -43,7 +43,7 @@
 </head>
 <body id="body">
         <h1>login failed</h1>
-        <a href="login">Login</a>
+        <a href="/login.php">Login</a>
     <?php endif ?>
 <div id="pop-up">
     <img id="popupImage">

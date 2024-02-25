@@ -44,7 +44,7 @@ session_start(); ?>
 </head>
 <body id="body">
         <h1>login failed</h1>
-        <a href="login">Login</a>
+        <a href="/login.php">Login</a>
     <?php endif ?>
 </body>
 </html> 
