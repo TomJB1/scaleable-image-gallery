@@ -132,7 +132,7 @@ function closePopup()
 
 
 
-/*
+
 // disable dev tools
 document.addEventListener('contextmenu', (e) => e.preventDefault());
 
@@ -152,5 +152,3 @@ document.onkeydown = (e) => {
   )
     return false;
 };
-
-*/
