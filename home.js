@@ -26,10 +26,10 @@ function createTiles()
     link.href = "gallery/"+number+'/'+titleName;
     link.innerHTML = `
     <div class="tile">
-        <h1>${titleName}</h1>
         <div class="imgDiv">
             <img src="images/${title}/display.jpg">
         </div>
+        <h1>${titleName}</h1>
     </div>`
     main.appendChild(link);
     });
